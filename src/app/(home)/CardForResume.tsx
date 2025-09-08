@@ -7,13 +7,6 @@ export function CardForResume() {
     const [isHovered, setIsHovered] = useState(false);
     const cardRef = useRef<HTMLDivElement>(null);
 
-    const handleMouseMove = (e: React.MouseEvent) => {
-        if (cardRef.current) {
-            const rect = cardRef.current.getBoundingClientRect();
-            // Mouse position tracking removed as it's not used
-        }
-    };
-
     const handleMouseEnter = () => {
         setIsHovered(true);
         // Dispatch custom event to notify paragraph section
@@ -34,7 +27,6 @@ export function CardForResume() {
                 style={{ willChange: 'transform' }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                onMouseMove={handleMouseMove}
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25, duration: 0.3 }}
             >

@@ -13,7 +13,6 @@ export default function HeroSection() {
   
   // Glitch-style name animation
   const [isGlitching, setIsGlitching] = useState(false)
-  const nameTexts = ["Krushna", "|{₹μ$|-|N@"]
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,7 +22,7 @@ export default function HeroSection() {
       }, 200)
     }, 4000)
     return () => clearInterval(interval)
-  }, [nameTexts.length])
+  }, [])
 
   return (
     <HeroHighlight containerClassName="min-h-screen">

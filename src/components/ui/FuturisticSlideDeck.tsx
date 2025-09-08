@@ -380,6 +380,7 @@ const SkillPopup = ({ skill, isOpen, onClose }: { skill: TechSkill; isOpen: bool
 };
 
 export function FuturisticSlideDeck() {
+  const [isVisible, setIsVisible] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const [selectedSkill, setSelectedSkill] = useState<TechSkill | null>(null);

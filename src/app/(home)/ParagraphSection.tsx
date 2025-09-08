@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { useState, useEffect } from "react";
 
 const StyledText = ({ isPhotoHovered }: { isPhotoHovered: boolean }) => (
@@ -11,7 +10,7 @@ const StyledText = ({ isPhotoHovered }: { isPhotoHovered: boolean }) => (
       transition={{ duration: 0.8, delay: 0.2 }}
       className="text-gray-300"
     >
-      I'm{" "}
+      I&apos;m{" "}
       <span className="font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
         Krushna Nawale
       </span>
