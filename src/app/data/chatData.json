@@ -1,0 +1,36 @@
+{
+  "faqs": [
+    {
+      "question": "What is a normal heart rate?",
+      "answer": "A normal resting heart rate for adults ranges from 60-100 beats per minute. Athletes may have lower rates (40-60 bpm) due to better cardiovascular fitness."
+    },
+    {
+      "question": "What is normal blood pressure?",
+      "answer": "Normal blood pressure is typically less than 120/80 mmHg. Elevated is 120-129/<80, Stage 1 hypertension is 130-139/80-89, and Stage 2 is ≥140/≥90."
+    },
+    {
+      "question": "Tell me about Krushna's coding skills",
+      "answer": "Krushna is proficient in Java, C, C++, Python for programming. For web development: HTML, CSS, JavaScript, React, Node.js. Also skilled in SQL, Tableau, Excel for data analytics, plus Git, GitHub, Docker, and Vercel for development tools."
+    },
+    {
+      "question": "What projects has Krushna worked on?",
+      "answer": "Krushna has built several impressive projects: FitOS Dashboard (AI health OS), Task Flow (quantum-themed productivity app), Quantum Calendar (interactive calendar), and an AI Resume Builder using NLP."
+    },
+    {
+      "question": "What are Krushna's certifications?",
+      "answer": "Krushna holds certifications from Deloitte Australia (Data Analytics), EA Software Engineering, Tata Data Visualization, Cyber Security & Log Analysis, and Oasis Infobyte Web Development Internship - all from 2025."
+    },
+    {
+      "question": "How can I contact Krushna?",
+      "answer": "You can reach Krushna at krushnanawale4142@gmail.com, connect on LinkedIn at linkedin.com/in/krushna4142, or check out his GitHub at github.com/Krushna4142."
+    },
+    {
+      "question": "What is KIT?",
+      "answer": "KIT stands for 'Krushna In Tech' - representing Krushna's brand as a Full Stack Developer and AI & Cloud Enthusiast focused on turning innovative ideas into impactful solutions."
+    },
+    {
+      "question": "What coding tips do you have?",
+      "answer": "Focus on clean, readable code. Practice data structures and algorithms regularly. Build projects to apply your learning. Use version control (Git) consistently. Stay updated with new technologies and best practices."
+    }
+  ]
+}
