@@ -12,7 +12,6 @@ export default function HeroSection() {
   const scaleX = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 })
   
   // Glitch-style name animation
-  const [currentName, setCurrentName] = useState(0)
   const [isGlitching, setIsGlitching] = useState(false)
   const nameTexts = ["Krushna", "|{₹μ$|-|N@"]
   
@@ -20,22 +19,11 @@ export default function HeroSection() {
     const interval = setInterval(() => {
       setIsGlitching(true)
       setTimeout(() => {
-        setCurrentName((prev) => (prev + 1) % nameTexts.length)
         setIsGlitching(false)
       }, 200)
     }, 4000)
     return () => clearInterval(interval)
-  }, [])
-
-  const handleMouseMove = () => {
-    if (!isGlitching) {
-      setIsGlitching(true)
-      setTimeout(() => {
-        setCurrentName((prev) => (prev + 1) % nameTexts.length)
-        setIsGlitching(false)
-      }, 200)
-    }
-  }
+  }, [nameTexts.length])
 
   return (
     <HeroHighlight containerClassName="min-h-screen">
@@ -112,7 +100,7 @@ export default function HeroSection() {
             >
               💡
             </motion.span>
-            "Code. Create. Innovate. Building SaaS, AI & Cloud-powered solutions."
+            "            &quot;Code. Create. Innovate. Building SaaS, AI &amp; Cloud-powered solutions.&quot;"
           </motion.p>
 
           {/* CTA Buttons */}

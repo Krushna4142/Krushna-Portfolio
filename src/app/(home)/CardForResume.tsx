@@ -1,19 +1,16 @@
 import { GlareCard } from "@/components/ui/glare-card";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 export function CardForResume() {
     const [isHovered, setIsHovered] = useState(false);
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const cardRef = useRef<HTMLDivElement>(null);
 
     const handleMouseMove = (e: React.MouseEvent) => {
         if (cardRef.current) {
             const rect = cardRef.current.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            setMousePosition({ x, y });
+            // Mouse position tracking removed as it's not used
         }
     };
 
