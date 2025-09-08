@@ -130,7 +130,7 @@ export function RakshaAIWidget() {
           {/* Text */}
           <div className="flex items-center gap-2">
             <span className="text-white font-medium text-sm">
-              💡 Hi! I'm KIT – Krushna's Digital Brain
+              💡 Hi! I&apos;m KIT – Krushna&apos;s Digital Brain
             </span>
             <motion.span
               className="text-blue-400 text-lg"

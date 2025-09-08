@@ -82,13 +82,13 @@ export function AIAssistant() {
           <div className="flex-1 max-w-md">
             {showTyping ? (
               <TypingAnimation
-                text="💡 Hi! I'm KIT – Krushna's Digital Brain"
+                text="💡 Hi! I&apos;m KIT – Krushna&apos;s Digital Brain"
                 speed={60}
                 className="text-sm md:text-base font-medium text-white"
               />
             ) : (
               <div className="text-sm md:text-base font-medium text-white opacity-0">
-                💡 Hi! I'm KIT – Krushna's Digital Brain
+                💡 Hi! I&apos;m KIT – Krushna&apos;s Digital Brain
               </div>
             )}
           </div>

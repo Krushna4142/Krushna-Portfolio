@@ -62,7 +62,7 @@ export function AboutSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                I'm a <span className="text-teal-400 font-semibold">Full Stack Developer</span> passionate about AI-driven, cloud-based, and secure applications. Currently pursuing <span className="text-purple-400 font-semibold">B.E. 3rd year Computer Engineering</span>. Specialized in modern web development, data analytics, and cybersecurity.
+                I&apos;m a <span className="text-teal-400 font-semibold">Full Stack Developer</span> passionate about AI-driven, cloud-based, and secure applications. Currently pursuing <span className="text-purple-400 font-semibold">B.E. 3rd year Computer Engineering</span>. Specialized in modern web development, data analytics, and cybersecurity.
               </motion.p>
               
               <motion.p 

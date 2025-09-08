@@ -113,7 +113,7 @@ export function EducationExperience() {
             onMouseEnter={() => setIsDescriptionHovered(true)}
             onMouseLeave={() => setIsDescriptionHovered(false)}
           >
-            Every opportunity I've had has shaped my mindset, sharpened my skills, and brought me closer to becoming a world-class developer. Here's a glimpse into the timeline of internships, experiences, and moments that defined my path.
+            Every opportunity I&apos;ve had has shaped my mindset, sharpened my skills, and brought me closer to becoming a world-class developer. Here&apos;s a glimpse into the timeline of internships, experiences, and moments that defined my path.
           </motion.p>
         </motion.div>
 
