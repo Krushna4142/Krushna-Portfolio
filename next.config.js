@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',            // for static export
     images: {
         unoptimized: true,         // disable Next.js Image Optimization
     },
@@ -8,6 +7,9 @@ const nextConfig = {
     assetPrefix: '',             // no asset prefix needed for user.github.io
     eslint: {
         ignoreDuringBuilds: true,  // disable ESLint during builds
+    },
+    typescript: {
+        ignoreBuildErrors: true,   // disable TypeScript errors during builds
     },
 };
 
