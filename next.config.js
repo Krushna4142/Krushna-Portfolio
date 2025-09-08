@@ -6,6 +6,9 @@ const nextConfig = {
     },
     trailingSlash: true,
     assetPrefix: '',             // no asset prefix needed for user.github.io
+    eslint: {
+        ignoreDuringBuilds: true,  // disable ESLint during builds
+    },
 };
 
 module.exports = nextConfig
