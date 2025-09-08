@@ -217,6 +217,11 @@ export function CertificationSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative h-32 overflow-hidden cursor-pointer"
+                onClick={(e) => {
+                  // Ensure the PDF opens in a new tab
+                  e.preventDefault();
+                  window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                }}
               >
                 <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative p-2">
                   {/* Certificate image */}
@@ -261,6 +266,10 @@ export function CertificationSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                  }}
                 >
                   <span className="text-xs font-medium">View Certificate</span>
                   <IconExternalLink className="w-3 h-3 group-hover/link:translate-x-1 transition-transform duration-300" />

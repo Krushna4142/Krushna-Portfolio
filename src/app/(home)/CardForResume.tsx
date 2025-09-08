@@ -67,7 +67,12 @@ export function CardForResume() {
                         src="/krishna.jpg.png"
                         alt="Krushna"
                         fill 
-                        style={{ objectFit: 'cover' }}
+                        style={{ 
+                            objectFit: 'cover',
+                            objectPosition: 'center top'
+                        }}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority
                     />
                 </GlareCard>
             </motion.div>
