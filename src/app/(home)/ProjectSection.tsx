@@ -28,7 +28,7 @@ const content = [
         githubUrl: "https://github.com/Krushna4142/agritech-webapp",
         content: (
             <div className="flex items-center justify-center bg-[linear-gradient(to_bottom_right,var(--green-500),var(--emerald-500))] text-white">
-                <Image src="/projectsrc/agritech.webp" alt="AgriTech Web App" fill style={{ objectFit: 'cover' }} />
+                <Image src="/projectsrc/agritech.webp.png" alt="AgriTech Web App" fill style={{ objectFit: 'cover' }} />
             </div>
         ),
     },

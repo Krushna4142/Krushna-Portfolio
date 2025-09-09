@@ -41,8 +41,8 @@ export function NavBarSection() {
             link: "https://github.com/Krushna4142",
         },
         {
-            name: "Let's Talk",
-            link: "#contact",
+            name: "LinkedIn",
+            link: "https://linkedin.com/in/krushna-nawale",
         }
     ];
 

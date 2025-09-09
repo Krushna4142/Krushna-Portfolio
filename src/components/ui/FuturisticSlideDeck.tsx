@@ -67,19 +67,19 @@ const techCategories: TechCategory[] = [
       },
       {
         name: 'C++',
-        icon: '/logo/cpp.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzAwNTk5QyIvPgo8dGV4dCB4PSIzMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DKys8L3RleHQ+Cjwvc3ZnPg==',
         description: 'System programming and performance-critical applications',
         level: 'Intermediate'
       },
       {
         name: 'HTML',
-        icon: '/logo/html.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0UzNEYyNiIvPgo8dGV4dCB4PSIzMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IVE1MPC90ZXh0Pgo8L3N2Zz4=',
         description: 'Semantic markup and web structure',
         level: 'Expert'
       },
       {
         name: 'CSS',
-        icon: '/logo/css.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzE1NzJCNiIvPgo8dGV4dCB4PSIzMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DU1M8L3RleHQ+Cjwvc3ZnPg==',
         description: 'Modern styling and responsive design',
         level: 'Expert'
       }
@@ -108,7 +108,7 @@ const techCategories: TechCategory[] = [
       },
       {
         name: 'MERN Stack',
-        icon: '/logo/mern.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzJEMzc0OCIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSI2IiBmaWxsPSIjNjFEQUZCIi8+CjxjaXJjbGUgY3g9IjQ4IiBjeT0iMTYiIHI9IjYiIGZpbGw9IiM2OEQ0NTciLz4KPGNpcmNsZSBjeD0iMTYiIGN5PSI0OCIgcj0iNiIgZmlsbD0iI0Y1OUU0MiIvPgo8Y2lyY2xlIGN4PSI0OCIgY3k9IjQ4IiByPSI2IiBmaWxsPSIjNjFEQUZCIi8+CjwvZz4KPC9zdmc+',
         description: 'MongoDB, Express, React, Node.js full-stack',
         projects: ['Full-stack Applications'],
         level: 'Advanced'
@@ -145,7 +145,7 @@ const techCategories: TechCategory[] = [
       },
       {
         name: 'Firebase',
-        icon: '/logo/firebase.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0ZGQ0EyOCIvPgo8cGF0aCBkPSJNMzIgMTZMMjQgMzJIMzJMMzggMjRMMzIgMTZaIiBmaWxsPSIjRkY1NzIyIi8+CjxwYXRoIGQ9Ik0yNCAzMkwzMiA0OEg0MEwzMiAzMkgyNFoiIGZpbGw9IiNGRkM0MjgiLz4KPC9zdmc+',
         description: 'Real-time database and backend services',
         projects: ['Real-time Applications'],
         level: 'Intermediate'
@@ -161,19 +161,19 @@ const techCategories: TechCategory[] = [
     skills: [
       {
         name: 'Excel',
-        icon: '/logo/excel.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzIxNzM0NiIvPgo8dGV4dCB4PSIzMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5YTDwvdGV4dD4KPC9zdmc+',
         description: 'Advanced spreadsheet analysis',
         level: 'Advanced'
       },
       {
         name: 'Tableau',
-        icon: '/logo/tableau.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0U5N0UyNyIvPgo8cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSI4IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxNiIgeT0iMjgiIHdpZHRoPSIzMiIgaGVpZ2h0PSI4IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxNiIgeT0iNDAiIHdpZHRoPSIzMiIgaGVpZ2h0PSI4IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Business intelligence and data visualization',
         level: 'Intermediate'
       },
       {
         name: 'Data Visualization',
-        icon: '/logo/data-viz.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzMzNjZGRiIvPgo8cmVjdCB4PSIxMiIgeT0iNDAiIHdpZHRoPSI4IiBoZWlnaHQ9IjE2IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIyNCIgeT0iMzIiIHdpZHRoPSI4IiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIzNiIgeT0iMjQiIHdpZHRoPSI4IiBoZWlnaHQ9IjMyIiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSI0OCIgeT0iMTYiIHdpZHRoPSI4IiBoZWlnaHQ9IjQwIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Creating insightful charts and dashboards',
         level: 'Advanced'
       }
@@ -188,19 +188,19 @@ const techCategories: TechCategory[] = [
     skills: [
       {
         name: 'Network Security',
-        icon: '/logo/network-security.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0RDMjYyNiIvPgo8cGF0aCBkPSJNMzIgMTJMMjAgMjRWNDBDMjAgNDggMjggNTIgMzIgNTJDMzYgNTIgNDQgNDggNDQgNDBWMjRMMzIgMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI0IiBmaWxsPSIjREMyNjI2Ii8+CjwvcGF0aD4KPC9zdmc+',
         description: 'Network monitoring and protection',
         level: 'Intermediate'
       },
       {
         name: 'Web Security',
-        icon: '/logo/web-security.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0VGNDQ0NCIvPgo8cGF0aCBkPSJNMzIgOEMzOCA4IDQ0IDEyIDQ0IDE4VjI0SDQ4VjQ4SDEyVjI0SDE2VjE4QzE2IDEyIDIyIDggMzIgOFpNMzIgMTJDMjQgMTIgMjAgMTYgMjAgMThWMjRINDBWMThDNDAgMTYgMzYgMTIgMzIgMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Application security and vulnerability assessment',
         level: 'Intermediate'
       },
       {
         name: 'Log Analysis',
-        icon: '/logo/log-analysis.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzc5MzNGRiIvPgo8cmVjdCB4PSIxMiIgeT0iMTYiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxMiIgeT0iMjQiIHdpZHRoPSIzMiIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxMiIgeT0iMzIiIHdpZHRoPSIzNiIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIxMiIgeT0iNDAiIHdpZHRoPSIyOCIgaGVpZ2h0PSI0IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Security log monitoring and analysis',
         level: 'Intermediate'
       }
@@ -215,13 +215,13 @@ const techCategories: TechCategory[] = [
     skills: [
       {
         name: 'Git',
-        icon: '/logo/git.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0Y1NTEzRCIvPgo8cGF0aCBkPSJNMzIgOEw0OCAyNEwzMiA0MEwxNiAyNEwzMiA4WiIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iNCIgZmlsbD0iI0Y1NTEzRCIvPgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjI0IiByPSI0IiBmaWxsPSIjRjU1MTNEIi8+CjxjaXJjbGUgY3g9IjMyIiBjeT0iMzYiIHI9IjQiIGZpbGw9IiNGNTUxM0QiLz4KPC9zdmc+',
         description: 'Version control and collaboration',
         level: 'Expert'
       },
       {
         name: 'GitHub',
-        icon: '/logo/github.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzE4MTcxNyIvPgo8cGF0aCBkPSJNMzIgOEMyMCA4IDEwIDE4IDEwIDMwQzEwIDQwIDE2IDQ4IDI0IDUxQzI1IDUxIDI1IDUwIDI1IDQ5VjQ1QzIxIDQ2IDE5IDQ0IDE5IDQ0QzE4IDQzIDE3IDQzIDE3IDQzQzE1IDQyIDE3IDQyIDE3IDQyQzE5IDQyIDIwIDQ0IDIwIDQ0QzIyIDQ3IDI1IDQ2IDI2IDQ1QzI2IDQ0IDI3IDQzIDI4IDQzQzIzIDQyIDE5IDQwIDE5IDM0QzE5IDMyIDIwIDMwIDIyIDI5QzIyIDI4IDIxIDI2IDIyIDI0QzIyIDI0IDI0IDIzIDI4IDI2QzMwIDI1IDMyIDI1IDM0IDI2QzM4IDIzIDQwIDI0IDQwIDI0QzQxIDI2IDQwIDI4IDQwIDI5QzQyIDMwIDQzIDMyIDQzIDM0QzQzIDQwIDM5IDQyIDM0IDQzQzM1IDQzIDM2IDQ0IDM2IDQ1VjQ5QzM2IDUwIDM2IDUxIDM3IDUxQzQ1IDQ4IDUxIDQwIDUxIDMwQzUxIDE4IDQxIDggMzIgOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==',
         description: 'Code hosting and collaboration platform',
         level: 'Expert'
       },
@@ -233,37 +233,37 @@ const techCategories: TechCategory[] = [
       },
       {
         name: 'Postman',
-        icon: '/logo/postman.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0ZGNkMzNyIvPgo8cGF0aCBkPSJNMzIgMTJDNDQgMTIgNTIgMjAgNTIgMzJDNTIgNDQgNDQgNTIgMzIgNTJDMjAgNTIgMTIgNDQgMTIgMzJDMTIgMjAgMjAgMTIgMzIgMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzIgMTZDNDIgMTYgNDggMjIgNDggMzJDNDggNDIgNDIgNDggMzIgNDhDMjIgNDggMTYgNDIgMTYgMzJDMTYgMjIgMjIgMTYgMzIgMTZaIiBmaWxsPSIjRkY2QzM3Ii8+Cjx0ZXh0IHg9IjMyIiB5PSIzOCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBPU1Q8L3RleHQ+Cjwvc3ZnPg==',
         description: 'API testing and development',
         level: 'Advanced'
       },
       {
         name: 'Vercel',
-        icon: '/logo/vercel.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzAwMDAwMCIvPgo8cGF0aCBkPSJNMzIgMTJMNDggNDhIMTZMMzIgMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Frontend deployment platform',
         level: 'Advanced'
       },
       {
         name: 'Windsurf',
-        icon: '/logo/windsurf.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzAwN0FGRiIvPgo8cGF0aCBkPSJNMTYgMzJMMzIgMTZMNDggMzJMMzIgNDhMMTYgMzJaIiBmaWxsPSJ3aGl0ZSIvPgo8dGV4dCB4PSIzMiIgeT0iMzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDdBRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPldTPC90ZXh0Pgo8L3N2Zz4=',
         description: 'AI-powered development environment',
         level: 'Advanced'
       },
       {
         name: 'Cursor',
-        icon: '/logo/cursor.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzAwMDAwMCIvPgo8cGF0aCBkPSJNMTYgMTZMMzIgMzJMMTYgNDhWMTZaIiBmaWxsPSIjMDBEOUZGIi8+CjxwYXRoIGQ9Ik0zMiAzMkw0OCAxNlY0OEwzMiAzMloiIGZpbGw9IiM4QjVDRjYiLz4KPC9zdmc+',
         description: 'AI code editor',
         level: 'Advanced'
       },
       {
         name: 'npm',
-        icon: '/logo/npm.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iI0NCMzgzNyIvPgo8dGV4dCB4PSIzMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ucG08L3RleHQ+Cjwvc3ZnPg==',
         description: 'Node package manager',
         level: 'Expert'
       },
       {
         name: 'Yarn',
-        icon: '/logo/yarn.webp',
+        icon: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iOCIgZmlsbD0iIzJDOEVCQiIvPgo8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSI0IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=',
         description: 'Fast package manager',
         level: 'Advanced'
       }

@@ -212,15 +212,15 @@ export function CertificationSection() {
                    }} />
               
               {/* Certificate thumbnail - clickable */}
-              <a
-                href={cert.pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
                 className="block relative h-32 overflow-hidden cursor-pointer"
-                onClick={(e) => {
-                  // Ensure the PDF opens in a new tab
-                  e.preventDefault();
-                  window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                onClick={() => {
+                  // Open PDF in new tab with proper error handling
+                  const newWindow = window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                  if (!newWindow) {
+                    // Fallback if popup blocked
+                    window.location.href = cert.pdfUrl;
+                  }
                 }}
               >
                 <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative p-2">
@@ -235,9 +235,12 @@ export function CertificationSection() {
                     />
                     
                     {/* Click to view overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 rounded-md">
-                      <div className="text-cyan-400 text-xs font-semibold bg-black/70 px-2 py-1 rounded-full border border-cyan-400/50">
-                        VIEW
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 rounded-md">
+                      <div className="text-cyan-400 text-xs font-semibold bg-black/80 px-3 py-2 rounded-full border border-cyan-400/50 shadow-lg">
+                        <div className="flex items-center gap-1">
+                          <IconExternalLink className="w-3 h-3" />
+                          <span>OPEN PDF</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -248,7 +251,7 @@ export function CertificationSection() {
                   {/* Neon glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md" />
                 </div>
-              </a>
+              </div>
               
               {/* Certificate info */}
               <div className="p-3">
@@ -261,19 +264,20 @@ export function CertificationSection() {
                 </p>
                 
                 {/* View Certificate link */}
-                <a
-                  href={cert.pdfUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/link"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                <button
+                  className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/link cursor-pointer"
+                  onClick={() => {
+                    // Open PDF in new tab with proper error handling
+                    const newWindow = window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
+                    if (!newWindow) {
+                      // Fallback if popup blocked
+                      window.location.href = cert.pdfUrl;
+                    }
                   }}
                 >
                   <span className="text-xs font-medium">View Certificate</span>
                   <IconExternalLink className="w-3 h-3 group-hover/link:translate-x-1 transition-transform duration-300" />
-                </a>
+                </button>
               </div>
               
               {/* Enhanced neon border on hover */}

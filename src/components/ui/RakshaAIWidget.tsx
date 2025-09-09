@@ -127,18 +127,25 @@ export function RakshaAIWidget() {
             />
           </motion.div>
 
-          {/* Text */}
-          <div className="flex items-center gap-2">
-            <span className="text-white font-medium text-sm">
-              💡 Hi! I&apos;m KIT – Krushna&apos;s Digital Brain
-            </span>
-            <motion.span
-              className="text-blue-400 text-lg"
-              animate={{ opacity: [1, 0, 1] }}
-              transition={{ duration: 1, repeat: Infinity }}
-            >
-              |
-            </motion.span>
+          {/* AI Image and Text */}
+          <div className="flex items-center gap-3">
+            <img 
+              src="/ai.jpg" 
+              alt="KIT - Krushna's Digital Brain" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-blue-400/50"
+            />
+            <div className="flex items-center gap-2">
+              <span className="text-white font-medium text-sm">
+                💡 Hi! I&apos;m KIT – Krushna&apos;s Digital Brain
+              </span>
+              <motion.span
+                className="text-blue-400 text-lg"
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+              >
+                |
+              </motion.span>
+            </div>
           </div>
         </motion.button>
       </motion.div>

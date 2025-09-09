@@ -160,9 +160,19 @@ export const ProjectComp: React.FC<ProjectCompProps> = ({ content, contentClassN
                         duration: 0.4
                     }
                 }}
+                onClick={() => {
+                    const currentProject = content[activeCard];
+                    if (currentProject.liveUrl) {
+                        const newWindow = window.open(currentProject.liveUrl, '_blank', 'noopener,noreferrer');
+                        if (!newWindow) {
+                            // Fallback if popup blocked
+                            window.location.href = currentProject.liveUrl;
+                        }
+                    }
+                }}
             >
                 <motion.div
-                    className="w-full h-full relative overflow-hidden"
+                    className="w-full h-full relative overflow-hidden group"
                     style={{ willChange: 'transform' }}
                     whileHover={{
                         scale: 1.02,
@@ -175,6 +185,18 @@ export const ProjectComp: React.FC<ProjectCompProps> = ({ content, contentClassN
                     }}
                 >
                     {content[activeCard].content ?? null}
+                    
+                    {/* Click to view overlay - only show if project has live URL */}
+                    {content[activeCard].liveUrl && (
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 rounded-md">
+                            <div className="text-white text-sm font-semibold bg-black/80 px-4 py-2 rounded-full border border-white/50 shadow-lg">
+                                <div className="flex items-center gap-2">
+                                    <span>🚀</span>
+                                    <span>OPEN LIVE DEMO</span>
+                                </div>
+                            </div>
+                        </div>
+                    )}
                 </motion.div>
             </motion.div>
         </motion.div>
