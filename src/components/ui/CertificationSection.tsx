@@ -212,16 +212,11 @@ export function CertificationSection() {
                    }} />
               
               {/* Certificate thumbnail - clickable */}
-              <div
+              <a
+                href={cert.pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block relative h-32 overflow-hidden cursor-pointer"
-                onClick={() => {
-                  // Open PDF in new tab with proper error handling
-                  const newWindow = window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
-                  if (!newWindow) {
-                    // Fallback if popup blocked
-                    window.location.href = cert.pdfUrl;
-                  }
-                }}
               >
                 <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center relative p-2">
                   {/* Certificate image */}
@@ -251,7 +246,7 @@ export function CertificationSection() {
                   {/* Neon glow effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 via-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md" />
                 </div>
-              </div>
+              </a>
               
               {/* Certificate info */}
               <div className="p-3">
@@ -264,20 +259,15 @@ export function CertificationSection() {
                 </p>
                 
                 {/* View Certificate link */}
-                <button
+                <a
+                  href={cert.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 group/link cursor-pointer"
-                  onClick={() => {
-                    // Open PDF in new tab with proper error handling
-                    const newWindow = window.open(cert.pdfUrl, '_blank', 'noopener,noreferrer');
-                    if (!newWindow) {
-                      // Fallback if popup blocked
-                      window.location.href = cert.pdfUrl;
-                    }
-                  }}
                 >
                   <span className="text-xs font-medium">View Certificate</span>
                   <IconExternalLink className="w-3 h-3 group-hover/link:translate-x-1 transition-transform duration-300" />
-                </button>
+                </a>
               </div>
               
               {/* Enhanced neon border on hover */}

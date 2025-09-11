@@ -24,8 +24,8 @@ const content = [
         description:
             "An intuitive crop management platform that helps farmers track, analyze, and optimize crop yield using Flask, React, and MySQL. Features comprehensive monitoring tools and data-driven insights for agricultural optimization.",
         tech: "Flask, React, MySQL",
-        liveUrl: null,
-        githubUrl: "https://github.com/Krushna4142/agritech-webapp",
+        liveUrl: "https://agritech-by-krushna-app.vercel.app/",
+        githubUrl: "https://github.com/Krushna4142/AgritechWebApp",
         content: (
             <div className="flex items-center justify-center bg-[linear-gradient(to_bottom_right,var(--green-500),var(--emerald-500))] text-white">
                 <Image src="/projectsrc/agritech.webp.png" alt="AgriTech Web App" fill style={{ objectFit: 'cover' }} />
